@@ -54,6 +54,7 @@ body {
 
   &__checkbox {
     margin-right: 8px;
+    cursor: pointer;
   }
 
   &__delete-btn {
@@ -68,6 +69,7 @@ body {
     text-decoration: none;
     padding: 0;
     transform: rotate(45deg);
+    transition: 0.3s ease-in-out;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -75,6 +77,10 @@ body {
 
     &::before {
       content: '+';
+    }
+
+    &:hover {
+      transform: rotate(225deg);
     }
   }
 }
@@ -87,6 +93,7 @@ body {
   cursor: pointer;
   border-radius: 8px;
   margin-left: 16px;
+  transition: 0.3s linear;
 }
 
 .create-task {
@@ -98,5 +105,9 @@ body {
     border: 3px solid #ccc;
     border-radius: 8px;
     flex: 1;
+  }
+
+  &__btn:hover {
+    background-color: #fff;
   }
 }
